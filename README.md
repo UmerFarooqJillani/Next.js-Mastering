@@ -1,2 +1,8 @@
-# Next.js-Mastering
-Explore Next.js from scratch with TypeScript and TailwindCSS. Features practical code examples, hands-on implementations, and core conceptual notes for modern web development.
+# <p align="center"> Next.js Mastering </p>
+
+
+## Introduction
+`Next.js` is a flexible React framework that gives you building blocks to create fast, **full-stack web applications**.
+
+You use React components to design your **user interface** (UI), and Next.js handles the **complex setup**, **infrastructure**, and **optimizations** for you.
+
