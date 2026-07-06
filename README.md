@@ -20,3 +20,18 @@ You use React components to design your **user interface** (UI), and Next.js han
     React is just a UI library. It doesn’t know what a "<b>page</b>" or a "<b>URL route</b>" is. You have to install external tools (like React Router) and configure them manually.
     </p>
 
+## `Next.js` vs. `Standard React`
+> React is an engine, Next.js is the entire sports car.
+
+<div align="center">
+
+| Feature | Standard React (Client-Side) | Next.js Framework (Full-Stack) |
+| :-------------: | :-------------: | :-------------: |
+| **What is it?** | A JavaScript library only for building user interfaces. | A comprehensive framework built on top of React. |
+| **Routing** | Requires manual setup using packages like `react-router-dom`. | **File-system based.** Folders in `app/` automatically become web pages.|
+| **Data Fetching** | Happens in the user's browser (visible loading spinners). | Can happen securely on the server before the page reaches the user. |
+| **Rendering Place** |	Rendered entirely inside the user's web browser. | Rendered on the <b>Server</b>, at Build <b>Time</b>, or on the <b>Edge</b>. |
+| **Backend Capability** |	None. You need a separate Node.js/Express backend server. | Built-in <b>Route Handlers</b> (`route.ts`) to make APIs instantly. |
+
+</div>
+
