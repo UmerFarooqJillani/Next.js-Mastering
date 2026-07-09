@@ -35,3 +35,9 @@ You use React components to design your **user interface** (UI), and Next.js han
 
 </div>
 
+## How `Next.js` Works Under the Hood with React
+1. **Request:** The user types in a URL. Next.js instantly routes it to the matching folder inside your `src/app/` directory.
+2. **Server Render:** Next.js runs your React components directly on the server first. It fetches database data securely and compiles your components into raw, meaningful HTML.
+3. **Streaming:** The server sends this raw HTML to the user's browser immediately so they see the page layout and text without waiting for JavaScript.
+4. **Hydration:** Once the HTML is on the screen, the browser downloads a small, optimized bundle of JavaScript for the parts marked "use client". React attaches this JavaScript to the HTML, making buttons and inputs interactive.
+
