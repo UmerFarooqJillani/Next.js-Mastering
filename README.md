@@ -54,7 +54,8 @@ Click any topic below to jump directly to my structured notes:
 
 1.  **[React Foundations](./notes/00_React_Foundations/)**
     1. [About React and Next.js](./notes/00_React_Foundations/01_About%20React%20&%20Next.js.md)
-    2. []()
+    2. [Rendering UI DOM](./notes/00_React_Foundations/02_rendering-ui-dom.md)
+    3. 
 
 
 ---
