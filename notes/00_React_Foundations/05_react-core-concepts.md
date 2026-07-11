@@ -93,6 +93,8 @@ Add the following array of names to your HomePage component: [Playground File - 
 
 --- 
 ## State - Adding Interactivity with State
+**Props** are used to pass data *into* a component from the outside, **State** is a component's internal memory. It stores information that can change over time-usually because a user clicks, types, or interacts with the page.
+
 Let's explore how React helps us add interactivity with **state** and **event handlers**.
 
 **Example:** Let's create a "Like" button inside your `HomePage` component. First, add a button element inside the `return()` statement: [Playground File - 05_index.html (Detail-7)](./src/05_index.html)
