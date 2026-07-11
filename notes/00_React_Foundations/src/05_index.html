@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@latest?dev",
+          "react-dom/client": "https://esm.sh/react-dom@latest/client?dev",
+          "react/jsx-runtime": "https://esm.sh/react@latest/jsx-runtime?dev" 
+        }
+      }
+      
+    </script>
+    <!-- Babel Standalone -->
+    <script src="https://unpkg.com/@babel/standalone@latest/babel.min.js"></script> <!--   ----(2   -->
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel" data-type="module" data-presets="react">
+        import React from 'react';
+        import { createRoot } from 'react-dom/client';
+
+        const domNode = document.getElementById('app');
+
+        function Header() { //  A component is a function that returns UI elements.
+            return <h1>Develop. Preview. Ship.</h1>;
+        }
+
+        function HomePage() {  // ------------(4
+            return <div>
+                {/* Nesting the Header component */}
+                <Header />
+            </div>;
+        }
+
+        const root = createRoot(domNode);
+        // root.render(header); 
+        // root.render(Header); // --------(2
+        root.render(<Header />);  // --------(3
+    </script>
+</body>
+
+</html>
