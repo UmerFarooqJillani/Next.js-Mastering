@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        ?dev suffix loads React's development build, Prints helpful warnings and 
+        errors to the browser console while you're learning
+    -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@latest?dev",
+          "react-dom/client": "https://esm.sh/react-dom@latest/client?dev",
+          "react/jsx-runtime": "https://esm.sh/react@latest/jsx-runtime?dev" 
+        }
+      }
+      
+    </script>
+    <!-- Babel Standalone -->
+    <script src="https://unpkg.com/@babel/standalone@latest/babel.min.js"></script> <!--   ----(2   -->
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- Imperative JavaScript code -->
+    <!-- 
+    Remove the DOM methods you added previously
+    <script type="text/javascript">
+        const app = document.getElementById('app');
+        const header = document.createElement('h1');
+        const text = 'Develop. Preview. Ship.';
+        const headerContent = document.createTextNode(text);
+        header.appendChild(headerContent);
+        app.appendChild(header);
+    </script> 
+    -->
+    <!-- Declarative React code -->
+    <!-- -------(2 -->
+    <script type="text/babel" data-type="module" data-presets="react">
+        import React from 'react';
+        import { createRoot } from 'react-dom/client';
+
+        const domNode = document.getElementById('app');
+        /* 
+            createRoot(domNode) = Takes a plain HTML container (like `<div id="app"></div>`) 
+                    and hands it over to React. It designates this container as the official 
+                    entry point (the "root") of your React application.
+
+            root.render(JSX) = The command that tells React to inject your UI component layout 
+                    into that newly designated root entry point.
+        */
+        const root = createRoot(domNode);
+        root.render(<h1>Develop. Preview. Ship.</h1>);
+    </script>
+</body>
+
+</html>
