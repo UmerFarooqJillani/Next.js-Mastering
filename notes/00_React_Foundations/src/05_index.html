@@ -28,21 +28,46 @@
 
         const domNode = document.getElementById('app');
 
-        function Header() { //  A component is a function that returns UI elements.
-            return <h1>Develop. Preview. Ship.</h1>;
+        // function Header() { //  A component is a function that returns UI elements.
+        // function Header(props) { // --------------(5
+        // console.log(props); // { title: "React" }  --------------(5
+        // console.log(props.title); // { React } --------------(5
+        function Header({ title }) { // --------------(5
+            console.log(title) // --------------(5
+            // return <h1>Develop. Preview. Ship.</h1>;
+            // return <h1>{title}</h1>;   // --------------(5 
+            return <h1>{`Cool ${title}`}</h1>;   // --------------(5 template literal
         }
 
         function HomePage() {  // ------------(4
             return <div>
                 {/* Nesting the Header component */}
-                <Header />
+                <Header title="React" /> {/* -----------(5*/}
             </div>;
+        }
+
+        function HomePage2() {    // ------------(6
+            const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+            return (
+                <div>
+                    <Header title="Develop. Preview. Ship." />
+                    <ul>
+                        {/* array.map() method to iterate over the array and use an arrow function to map a name to a list item*/}
+                        {names.map((name) => (
+                            <li key={name}>{name}</li>
+                        ))}
+                    </ul>
+                </div>
+            );
         }
 
         const root = createRoot(domNode);
         // root.render(header); 
         // root.render(Header); // --------(2
-        root.render(<Header />);  // --------(3
+        // root.render(<Header />);  // --------(3
+        // root.render(<HomePage />);
+        root.render(<HomePage2 />);
     </script>
 </body>
 
