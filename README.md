@@ -41,3 +41,20 @@ You use React components to design your **user interface** (UI), and Next.js han
 3. **Streaming:** The server sends this raw HTML to the user's browser immediately so they see the page layout and text without waiting for JavaScript.
 4. **Hydration:** Once the HTML is on the screen, the browser downloads a small, optimized bundle of JavaScript for the parts marked "use client". React attaches this JavaScript to the HTML, making buttons and inputs interactive.
 
+## Repository Map & Overview
+
+Welcome to my `Next.js mastering` hub! This digital notebook documents my journey learning full-stack development from the ground up using **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+
+### Directory Structure
+* **`notes/`**: Deep-dive architectural concepts, Basic Concepts, and implementation guidelines.
+* **`src/`**: The active playground where the code implementations run.
+
+### Quick Navigation Notebooks
+Click any topic below to jump directly to my structured notes:
+
+1.  **[React Foundations](./notes/00_React_Foundations/)**
+    1. [About React and Next.js](./notes/00_React_Foundations/01_About%20React%20&%20Next.js.md)
+    2. []()
+
+
+---
