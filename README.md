@@ -56,7 +56,8 @@ Click any topic below to jump directly to my structured notes:
     1. [About React and Next.js](./notes/00_React_Foundations/01_About%20React%20&%20Next.js.md)
     2. [Rendering UI DOM](./notes/00_React_Foundations/02_rendering-ui-dom.md)
     3. [Updating UI with JS](./notes/00_React_Foundations/03_updating_ui_with_js.md)
-    4. []()
+    4. [Getting Started with React](./notes/00_React_Foundations/04-getting-started-with-react.md)
+    5. 
 
 
 ---
