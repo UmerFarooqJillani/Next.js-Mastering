@@ -62,12 +62,54 @@
             );
         }
 
+        function handleClick() { // ------------(8
+            console.log("increment like count")
+        }
+
+        function HomePage3() { // ------------(7
+            const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+            return (
+                <div>
+                    <Header title="Develop. Preview. Ship." />
+                    <ul>
+                        {names.map((name) => (
+                            <li key={name}>{name}</li>
+                        ))}
+                    </ul>
+                    <button onClick={handleClick}>Like</button> {/* ---------------(8 */}
+                </div>
+            );
+        }
+        function HomePage4() {  // ---------------------(9
+            // 1. Initialize State with a starting value of 0
+            const [likes, setLikes] = React.useState(0);
+
+            // 2. Define an event handler function to update state
+            function handleClick() {
+                // Always use the setter function to update values so React knows to redraw the UI
+                setLikes(likes + 1);
+            }
+
+            return (
+                <div style={{ fontFamily: 'sans-serif', padding: '20px' }}>
+                    <h1>React Interactivity Playground</h1>
+
+                    <button onClick={handleClick} style={{ padding: '10px 20px', cursor: 'pointer' }}>
+                        Likes ({likes})
+                    </button>
+                </div>
+            );
+        }
+
         const root = createRoot(domNode);
         // root.render(header); 
         // root.render(Header); // --------(2
         // root.render(<Header />);  // --------(3
         // root.render(<HomePage />);
-        root.render(<HomePage2 />);
+        // root.render(<HomePage2 />); ---------(6
+        // root.render(<HomePage3 />); // -----------(7
+        root.render(<HomePage4 />); // -----------(9
     </script>
 </body>
 

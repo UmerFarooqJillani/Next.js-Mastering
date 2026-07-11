@@ -92,3 +92,62 @@ Add the following array of names to your HomePage component: [Playground File - 
 - If you run this code, React will give us a warning about a missing `key` prop. This is because React needs something to uniquely identify items in an array so it knows which elements to update in the DOM.
 
 --- 
+## State - Adding Interactivity with State
+Let's explore how React helps us add interactivity with **state** and **event handlers**.
+
+**Example:** Let's create a "Like" button inside your `HomePage` component. First, add a button element inside the `return()` statement: [Playground File - 05_index.html (Detail-7)](./src/05_index.html)
+
+### Listening to events
+To make the button do something when clicked, you can use the `onClick` event: [Playground File - 05_index.html (Detail-8)](./src/05_index.html)
+
+### State and hooks
+React has a set of functions called **hooks**. 
+- Hooks allow you to add additional logic such as state to your components.
+- You can think of state as any information in your UI that changes over time, usually triggered by user interaction.
+
+    <div align="center">
+    <img src="./img/learn-state.webp"/>
+    </div>
+
+- You can use state to store and increment the number of times a user has clicked the "Like" button. In fact, the React hook used to manage state is called: `useState()`
+- Add `useState()` to your project. It returns an array, and you can access and use those array values inside your component using **array destructuring**:
+    ```js
+    function HomePage() {
+    // ...
+    const [] = React.useState();
+    
+    // ...
+    }
+    ```
+    1. The first item in the array is the state value, which you can name anything. It's recommended to name it something descriptive:
+        ```js
+        function HomePage() {
+        // ...
+        const [likes] = React.useState();
+        
+        // ...
+        }
+        ```
+    2. The second item in the array is a function to update the value. You can name the update function anything, but it's common to prefix it with set followed by the name of the state variable you're updating:
+        ```js
+        function HomePage() {
+        // ...
+        const [likes, setLikes] = React.useState();
+        
+        // ...
+        }
+        ```
+    <div align="center">
+    <img src="./img/useState.png"/>
+    </div>
+
+    - You can also take the opportunity to add the initial value of your likes state to 0:
+        ```js
+        function HomePage() {
+            // ...
+            const [likes, setLikes] = React.useState(0);
+        }
+        ```
+- [Playground File - 05_index.html (Detail-9)](./src/05_index.html)
+
+--- 
