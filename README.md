@@ -52,6 +52,7 @@ Welcome to my `Next.js mastering` hub! This digital notebook documents my journe
 ### Quick Navigation Notebooks
 Click any topic below to jump directly to my structured notes:
 
+0. **[Interview Q/A](./notes/Interview/)**
 1.  **[React Foundations](./notes/00_React_Foundations/)**
     1. [About React and Next.js](./notes/00_React_Foundations/01_About%20React%20&%20Next.js.md)
     2. [Rendering UI DOM](./notes/00_React_Foundations/02_rendering-ui-dom.md)
