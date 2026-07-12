@@ -178,3 +178,17 @@ function Header({ title }: HeaderProps) {
 ```
 
 --- 
+## The Low Storage Solution: How to Safely Delete & Recover Later
+When you are done practicing for the week, simply delete these two folders from your project directory entirely:
+1. Delete `node_modules/` (contains thousands of downloaded packages = 300MB+)
+2. Delete `.next/` (local build cache folder)
+
+**The Recovery Process (When you want to work on it again):**
+1. Open your terminal in the project folder.
+2. Run this single command:
+
+```Bash
+npm install
+```
+
+--- 
