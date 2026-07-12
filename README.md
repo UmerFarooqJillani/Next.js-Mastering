@@ -58,7 +58,7 @@ Click any topic below to jump directly to my structured notes:
     3. [Updating UI with JS](./notes/00_React_Foundations/03_updating_ui_with_js.md)
     4. [Getting Started with React](./notes/00_React_Foundations/04-getting-started-with-react.md)
     5. [Building UI with Components (Components, Props & State)](./notes/00_React_Foundations/05_react-core-concepts.md)
-    6. 
+    6. [Installing Next.js](./notes/00_React_Foundations/06_Installing_Next.js.md)
 
 
 ---
