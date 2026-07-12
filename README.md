@@ -60,6 +60,7 @@ Click any topic below to jump directly to my structured notes:
     4. [Getting Started with React](./notes/00_React_Foundations/04-getting-started-with-react.md)
     5. [Building UI with Components (Components, Props & State)](./notes/00_React_Foundations/05_react-core-concepts.md)
     6. [Installing Next.js](./notes/00_React_Foundations/06_Installing_Next.js.md)
+    7. [Server and Client Components](./notes/00_React_Foundations/07_Server%20&%20Client%20Components.md)
 
 
 ---
